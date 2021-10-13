@@ -1,0 +1,24 @@
+<section class="content">
+
+
+    
+<form [formGroup]="formUser" class="form" (ngSubmit)="Register()">
+
+    <h1>Register</h1>
+    <input type="email"
+     placeholder="Email"
+     formControlName="emailUser"
+     class="form-control"
+    required
+     name="email">
+
+    <input type="password"
+     placeholder="password"
+     formControlName="passUser"
+     required
+     class="form-control"
+     name="password">
+
+    <button type="submit" class="btn" [disabled]="formUser.invalid">registrar</button>
+</form>
+</section>

@@ -1,0 +1,295 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+$Roboto:'Roboto';
+$Raleway:'Raleway';
+$Mukta:'Mukta';
+
+strong{
+    word-break: break-all !important;
+    text-align: center !important;
+}
+
+input{
+    border: none !important;
+    outline: none !important;
+    border-bottom: 1px solid #488DBB !important;
+}
+.content{
+    width: 85%;
+    min-height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   box-sizing: border-box;
+   padding: 6px;
+}
+
+.btn-all{
+    position: absolute;
+    font-size: 15px;
+    left: 10px;
+    bottom: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.btns-pages{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        margin-left: 5px;
+    }
+
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 200px;
+    min-height: 230px;
+    border-radius: 4px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 5px;
+    background: rgba(255, 255, 255,0.5);
+   
+}
+
+
+.card .card-title{
+    width: 100%;
+    min-height: 20px;
+    background: #488DBB;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    
+    a{
+        font-family: $Roboto;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+
+        }
+}
+
+
+.card .card-body{
+width: 100%;
+height: 120px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+}
+
+.card .card-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+
+}
+
+.card-footer .email{
+    width: 100%;
+    min-height: 40px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap ;
+    margin-top: 8px;
+
+    input{
+        position: relative;
+        margin-left: -19px;
+    }
+    strong:nth-child(1){
+        color: black;
+    }
+
+    strong{
+        font-family: $Raleway;
+        font-size: 16px;
+        color: rgb(50, 50, 167);
+
+        font-weight: 900;
+        text-align: center;
+        width: 100%;
+        height: 23px;
+        margin-top: 3px;
+        text-align: center;
+    }
+    
+}
+
+
+.card-footer .name{
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+   
+    strong:nth-child(1){
+        color: black;
+    }
+
+    strong{
+        font-family: $Raleway;
+        font-size: 16px;
+        color: rgb(50, 50, 167);
+
+        font-weight: 900;
+        text-align: center;
+        width: 100%;
+        height: 23px;
+        margin-top: 3px;
+        text-align: center;
+    }
+}
+.card-footer .last{
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 9px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+       strong:nth-child(1){
+        color: black;
+    }
+
+    strong{
+        font-family: $Raleway;
+        font-size: 16px;
+        color: rgb(50, 50, 167);
+
+        font-weight: 900;
+        text-align: center;
+        width: 100%;
+        height: 23px;
+        margin-top: 3px;
+        text-align: center;
+    }
+}
+
+.card-footer .btns{
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: center;
+   padding-bottom: 10px;
+}
+.info-user{
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    min-height: 1200px;
+    top: 0;
+    right: 0;
+    background: #488DBB;
+    border-radius: 15px;
+    padding-bottom: 40px;
+  
+}
+
+.info-user .btn{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 50px;
+    height: 50px;
+}
+ .position {
+    background: #fff;
+    width: 80%;
+    min-height: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 60px auto auto auto;
+}
+
+
+.position .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    button{
+border: none;
+width: 90%;
+height: 45px;
+background: #488DBB;
+color: #fff;
+border-radius: 10px;
+margin-top: 10px;
+    }
+}
+
+.position .info-complete{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 9px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+       strong:nth-child(1){
+        color: black;
+    }
+
+    strong{
+        font-family: $Raleway;
+        font-size: 16px;
+        color: rgb(50, 50, 167);
+
+        font-weight: 900;
+        text-align: center;
+        width: 100%;
+        height: 23px;
+        margin-top: 3px;
+        text-align: center;
+    }
+}
+

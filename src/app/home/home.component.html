@@ -1,0 +1,99 @@
+
+
+<div class="content" [@animations]="defaultContent">
+
+    <mat-card class="card" *ngFor="let u of Users.data"
+     title="Ver vista completa"
+     
+      [@animations]="defaultCard">
+        <mat-card-title class="card-title">
+            <a>Usuario numero: {{u.id}} </a>
+        </mat-card-title>
+        
+        <mat-card-content class="card-body">
+            <img [src]="u.avatar" alt="imagen de usuario">
+        </mat-card-content>
+        
+        <mat-card-footer class="card-footer">
+            <div class="email">
+              
+                <strong>Email:</strong>
+                <strong>{{u.email}}</strong>
+            </div>
+            <div class="name">
+                <strong>First Name</strong>
+                <strong>{{u.first_name}}</strong>
+            </div>
+              <div class="last">
+                <strong>Last Name</strong>
+                <strong>{{u.last_name}}</strong>
+              </div>
+              <div class="btns">
+                  <button  class="btn btn-success"  (click)="SelectUser(u.id)">See More Information</button>
+
+              </div>
+        </mat-card-footer>
+
+        </mat-card>
+        <button class="btn btn-block btn-danger btn-all" (click)="deleteAll()">Delete All</button>
+     
+        
+<div class="btns-pages">
+    <button class="btn btn-primary btn-page" routerLink="/home" [routerLinkActive]="['active']">1</button>
+<button class="btn btn-primary btn-page" routerLink="/page2" [routerLinkActive]="['active']">2</button>
+</div>
+</div>
+
+<div class="info-user" [@animations]="default">
+
+    <button class="btn btn-danger bn-lg" (click)="ResetInfoUser()" >x</button>
+
+
+
+    
+    <mat-card class="card position">
+        <mat-card-title class="card-title">
+            <a>Usuario numero: {{tId}} </a>
+        </mat-card-title>
+        
+        <mat-card-content class="card-body">
+            <img [src]="img" alt="imagen de usuario">
+        </mat-card-content>
+        
+        <mat-card-footer class="card-footer">
+            <div class="email">
+              
+                <strong>Email:</strong>
+                <strong>{{email}}</strong>
+            </div>
+            <div class="name">
+                <strong>First Name</strong>
+                <strong>{{name}}</strong>
+            </div>
+              <div class="last">
+                <strong>Last Name</strong>
+                <strong>{{last}}</strong>
+              </div>
+              <div class="info-complete">
+                <strong>Information</strong>
+                <strong>Title:</strong>
+                <strong>{{Ttitle}}</strong>
+                
+              </div>
+              <div class="info-complete">
+                <strong>Body</strong>
+                <strong>{{Bbody}}</strong>
+              </div>
+
+        </mat-card-footer>
+
+        </mat-card>
+             
+   
+
+
+
+</div>
+
+
+
